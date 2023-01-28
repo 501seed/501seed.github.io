@@ -6,20 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>501 Seed</title>
   <style>
+    :root {
+      --blue: #c3dfe0;
+      --green: #bcd979;
+      --green2: #9dad6f;
+      --brown: #7d6d61;
+      --brown2: #5e574d;
+    }
     html, body {
       font-family: sans-serif;
       margin: 0;
       padding: 0;
+      line-height: 1;
+      color: #fff;
+      background: var(--blue);
     }
     h1{
       display: flex;
       align-items: center;
       font-weight: lighter;
       margin: 0;
-      padding: 1rem;
+      padding: 1rem 0;
       font-family: Monaco;
       font-size: 2rem;
-      color: #666;
+      padding: 2rem;
+      background: var(--brown2);
+    }
+    h2 {
+      color: var(--brown2);
+      font-size: 3rem;
+      font-weight: lighter;
+    }
+    section {
+      padding: 2rem;
+    }
+    .hero {
+      font-size: 3.5rem;
+      position: relative;
+      padding: 2em 1em 4em 1em;
+      background: var(--brown2);
+    }
+    .hero p {
+      display: inline;
+      line-height: 2;
+      padding-left: 10px;
+      box-shadow: 0px 10px 0 var(--brown);
+      border-left: 10px solid var(--brown);
+      border-right: 10px solid var(--brown);
+    }
+    @media all and (max-width: 40em) {
+      .hero, h2 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
@@ -30,10 +68,15 @@
       <path 
         d="M 9 -5 C 9 -3 11 -3 11 -5 L 11 -17 C 11 -17 20 -17 20 -29 C 10 -29 10 -20 10 -20 C 10 -20 10 -24 2 -24 C 2 -17 9 -17 9 -17 L 9 -5" 
         stroke-width="0"
-        fill="#90EE90"
+        fill="#bcd979"
       />
     </svg>
   </h1>
-  
+  <section class="hero">
+    <p>Non-Profit Venture Capital<br />&amp; Technical Consulting&nbsp;</p>
+  </section>
+  <section>
+    <h2>We Can Change The World</h2>
+  </section>
 </body>
 </html>
