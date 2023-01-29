@@ -26,30 +26,37 @@
       align-items: center;
       font-weight: lighter;
       margin: 0;
-      padding: 1rem 0;
       font-family: Monaco;
       font-size: 2rem;
-      padding: 2rem;
       background: var(--brown2);
+      
     }
     h2 {
       color: var(--brown2);
       font-size: 3rem;
       font-weight: lighter;
     }
+    h3 {
+      color: var(--brown2);
+      font-size: 2rem;
+      font-weight: lighter;
+    }
     section {
       padding: 2rem;
+      color: var(--brown2);
+      line-height: 1.5;
     }
     .hero {
       font-size: 3.5rem;
       position: relative;
-      padding: 2em 1em 4em 1em;
+      padding: 1.5em 1em 3em 1em;
       background: var(--brown2);
     }
     .hero p {
       display: inline;
       line-height: 2;
       padding-left: 10px;
+      color: #fff;
       box-shadow: 0px 10px 0 var(--brown);
       border-left: 10px solid var(--brown);
       border-right: 10px solid var(--brown);
@@ -59,24 +66,57 @@
         font-size: 1.5rem;
       }
     }
+    nav{
+      display: flex;
+      background: var(--brown2);
+      justify-content: space-between;
+      align-items: stretch;
+    }
+    nav div {
+      display: flex;
+      align-items: center;
+    }
+    nav a {
+      color: inherit;
+      text-decoration: none;
+    }
+    nav h1 a {
+      padding: 1rem;
+    }
+    nav div a { 
+      padding: 1.5rem;
+      display: inline-block;
+    }
+    nav a:hover {
+      background: var(--brown);
+    }
   </style>
 </head>
 <body>
-  <h1>
-    501
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="1.5 -29.5 19 26.5" width="20">
-      <path 
-        d="M 9 -5 C 9 -3 11 -3 11 -5 L 11 -17 C 11 -17 20 -17 20 -29 C 10 -29 10 -20 10 -20 C 10 -20 10 -24 2 -24 C 2 -17 9 -17 9 -17 L 9 -5" 
-        stroke-width="0"
-        fill="#bcd979"
-      />
-    </svg>
-  </h1>
+  <nav>
+    <h1>
+      <a href="/">
+      501<svg xmlns="http://www.w3.org/2000/svg" viewBox="1.5 -29.5 19 26.5" width="20">
+        <path 
+          d="M 9 -5 C 9 -3 11 -3 11 -5 L 11 -17 C 11 -17 20 -17 20 -29 C 10 -29 10 -20 10 -20 C 10 -20 10 -24 2 -24 C 2 -17 9 -17 9 -17 L 9 -5" 
+          stroke-width="0"
+          fill="#bcd979"
+        />
+      </svg>
+      </a>
+    </h1>
+    <div>
+      <a href="#apply">Apply</a>
+    </div>
+  </nav>
   <section class="hero">
     <p>Non-Profit Venture Capital<br />&amp; Technical Consulting&nbsp;</p>
   </section>
-  <section>
-    <h2>We Can Change The World</h2>
+  <section id="apply">
+    <h2>Together, We Can Change The World</h2>
+    <h3>Apply for 501 Seed</h3>
+    <p>Fill out an application that explains your <strong>mission</strong>, <strong>motivation</strong>, and <strong>impact</strong>.<br /> Still in the planning stages? No problem! We offer grants and consulting to non-profit startups of all sizes.</p>
+    <div data-tf-widget="Ed0FwL81" data-tf-opacity="100" data-tf-iframe-props="title=501 Seed Application" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="https://embed.typeform.com/next/embed.js"></script>
   </section>
 </body>
 </html>
