@@ -52,6 +52,13 @@
       padding: 1.5em 1em 3em 1em;
       background: var(--brown2);
     }
+    footer{
+      background: var(--brown2);
+      padding: 2rem;
+    }
+    footer a {
+      color: inherit;
+    }
     .hero p {
       display: inline;
       line-height: 2;
@@ -110,7 +117,7 @@
     </div>
   </nav>
   <section class="hero">
-    <p>Non-Profit Venture Capital<br />&amp; Technical Consulting&nbsp;</p>
+    <p>Non-Profit Venture Capital<br />&amp; Technical Cofoundry&nbsp;</p>
   </section>
   <section id="apply">
     <h2>Together, We Can Change The World</h2>
@@ -118,5 +125,13 @@
     <p>Fill out an application that explains your <strong>mission</strong>, <strong>motivation</strong>, and <strong>impact</strong>.<br /> Still in the planning stages? No problem! We offer grants and consulting to non-profit startups of all sizes.</p>
     <div data-tf-widget="Ed0FwL81" data-tf-opacity="100" data-tf-iframe-props="title=501 Seed Application" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="https://embed.typeform.com/next/embed.js"></script>
   </section>
+  <footer>
+    &copy; <span class="js-year"></span>
+    &middot;
+    <a href="mailto:hello@501seed.org">hello@501seed.org</a>
+  </footer>
+  <script>
+    document.querySelector(".js-year").innerHTML = new Date().getFullYear();
+  </script>
 </body>
 </html>
